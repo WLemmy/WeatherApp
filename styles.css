@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    font-family: Roboto;
+    /* background-color: rgb(105, 161, 218);
+     */
+     background-image: url('/assets/header.png');
+}
+.container {
+    opacity: 0.8;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    background-color: beige;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.);
+    margin-top: 200px;
+
+}
+
+h1 {
+    font-size: 24;
+}
+
+h2 {
+    font-size: 18;
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    margin: 30px 30px;
+    border: 1px solid; /* Border style and width was missing a value */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+ button {
+    background-color: coral;
+    width: 80%;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    /* margin: 10px 0; */
+    font-size: 18px;
+    font-weight: bold;
+ }
+.Weather-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 10px 0;
+}

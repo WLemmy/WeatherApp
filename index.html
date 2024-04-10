@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="icon" type="icons8-favicon-32.png" href="/assets/icons8-favicon-32.png">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  
+    <!--container for displaying the weather information-->
+
+   <div class="container">
+    <h1>Weather App</h1>
+    <label for="location-value">Location:</label>
+    <input type="text" id="location-value" placeholder="Enter weather location" onkeypress="if(event.key === 'Enter') fetchWeatherData()">
+    <button id="btn" onclick="fetchWeatherData()">Get Weather</button>
+    <div class="Weather-info">
+        <h2 id="location"></h2>
+        <p id="temperature"></p>
+        <p id="description"></p>
+    </div>
+   </div>
+
+  <script src="/index.js"></script>  
+</body>
+</html>
