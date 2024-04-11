@@ -69,30 +69,28 @@ window.addEventListener('load', function(){
         .catch(error =>  console.log(error))
     }
 
-        // format date
-        function formatDate(date){
-            let hours = date.getHours();
-            let minutes = date.getMinutes();
+    // format date
+    function formatDate(date){
+        let hours = date.getHours();
+        let minutes = date.getMinutes();
 
-            if(hours < 10){
-                hours = "0" + hours;
-            }
+        if(hours < 10){
+            hours = "0" + hours;
+        }
 
-            if(minutes < 10){
-                minutes = "0" + minutes;
-            }
+        if(minutes < 10){
+            minutes = "0" + minutes;
+        }
 
-            return ${hours}:${minutes};
-}
+        return `${hours}:${minutes}`;
+    }
+
     // Event listener for button click
     document.getElementById('btn').addEventListener('click', fetchWeatherData);
-    
+
     // event listener for dark mode
     document.getElementById('toggle-dark-mode').addEventListener("click", function(){
         document.querySelector(".container").classList.toggle('dark');
     });
-
-});
-    
 
 });
