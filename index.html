@@ -9,17 +9,24 @@
 </head>
 <body>
   
+    <!-- Button to toggle dark mode -->
+    <button id = "toggle-dark-mode">TOGGLE DARK MODE</button>
+
     <!--container for displaying the weather information-->
 
    <div class="container">
     <h1>Weather App</h1>
     <label for="location-value">Location:</label>
     <input type="text" id="location-value" placeholder="Enter weather location" onkeypress="if(event.key === 'Enter') fetchWeatherData()">
-    <button id="btn" onclick="fetchWeatherData()">Get Weather</button>
+    <button id="btn">Get Weather</button>
     <div class="Weather-info">
         <h2 id="location"></h2>
-        <p id="temperature"></p>
-        <p id="description"></p>
+    </div>
+
+    <div id="forecasts">
+        <h3>Weather Forecast (1 hour interval)</h3>
+        <div id="forecasts-list"></div>
+        
     </div>
    </div>
 
