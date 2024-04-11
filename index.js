@@ -86,7 +86,13 @@ window.addEventListener('load', function(){
 }
     // Event listener for button click
     document.getElementById('btn').addEventListener('click', fetchWeatherData);
+    
+    // event listener for dark mode
+    document.getElementById('toggle-dark-mode').addEventListener("click", function(){
+        document.querySelector(".container").classList.toggle('dark');
+    });
 
+});
     
 
 });
