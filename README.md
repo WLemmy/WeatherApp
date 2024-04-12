@@ -3,7 +3,7 @@ Welcome to the Weather App! This application allows you to retrieve weather info
 ## Features
     • Get Weather Data: Enter a location and click a button to retrieve the current weather data for that location.
     • Supports Location Input: You can enter the location manually or use the Enter key for quick submission.
-    • Display Weather Information: The app displays temperature and weather description based on the retrieved data.
+    • Display Weather Information: The app displays temperature hourly on the retrieved data.
 ## Technologies Used
     • JavaScript: Used to fetch weather data asynchronously from the API and update the UI dynamically.
     • HTML/CSS: Provides the structure and styling for the user interface.
